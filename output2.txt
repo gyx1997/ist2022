@@ -1,0 +1,52 @@
+
+=== Classifier model(full training set) ===
+Rules: 
+(AttrX >= 2.75) => 1 (4/1)
+0 3 6 9 
+(AttrY <= 1.85) and (AttrY >= 0.825) => 1 (4/2)
+0 4 5 6 
+ => 0 (0/13)
+
+
+Model Complexity Stats: 
+Num. Rules  3
+Avg. Len.   1.000
+Max. Len.   2
+Minor Instances Stats:
+# Total     6
+# Covered   6
+# Coverage  1.000
+
+=== Evaluation on training set ===
+Overall:
+Accuracy    0.905
+By Class:
+Label           0        1		
+F1          0.929     0.857
+Recall      0.867     1.000
+Precision   1.000     0.750
+FP Rate     0.000     0.133
+ROC Area*   0.933     0.933
+Train Instances:
+1 0 0 1 1 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 
+Train Instances Predicted:
+1 0 0 1 1 1 1 1 0 1 0 0 0 0 0 0 0 0 0 1 0 
+Train Instances Predicted Proba:
+0.489 0.000 0.000 0.400 0.333 0.333 0.489 0.489 0.000 0.400 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.333 0.000 
+
+=== Evaluation on test set ===
+Overall:
+Accuracy    0.750
+By Class:
+Label           0        1		
+F1          0.667     0.800
+Recall      0.500     1.000
+Precision   1.000     0.667
+FP Rate     0.000     0.500
+ROC Area*   0.750     0.750
+Test Instances:
+1 1 0 0 
+Test Instances Predicted:
+1 1 1 0 
+Test Instances Predicted Proba:
+0.489 0.400 0.489 0.000 
